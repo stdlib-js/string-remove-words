@@ -30,32 +30,30 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-remove-words
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-removeWords = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@umd/browser.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.removeWords;
-})();
-</script>
+var removeWords = require( '@stdlib/string-remove-words' );
 ```
 
 #### removeWords( str, words\[, ignoreCase] )
@@ -86,16 +84,11 @@ var out = removeWords( str, [ 'boop', 'foo' ], true );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-inmap@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-spam-assassin@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var removeWords = require( '@stdlib/string-remove-words' );
+var stopwords = require( '@stdlib/datasets-stopwords-en' );
+var inmap = require( '@stdlib/utils-inmap' );
+var spam = require( '@stdlib/datasets-spam-assassin' );
 
 var corpus = spam();
 var words = stopwords();
@@ -107,18 +100,74 @@ function remove( mail, idx ) {
 }
 
 inmap( corpus, remove );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/string-remove-words
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: remove-words [options] [<string>] --words=<string>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --words w1,w2,...     Comma-separated list of words.
+         --ignore-case         Perform case-insensitive replace operation.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ remove-words 'beep! boop!!!' --words='beep,boop'
+! !!!
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n 'beep! boop!!!' | remove-words --words='BEEP,BOOP' --ignore-case
+! !!!
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
