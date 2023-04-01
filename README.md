@@ -30,31 +30,14 @@ limitations under the License.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/string-remove-words
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var removeWords = require( '@stdlib/string-remove-words' );
+import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@esm/index.mjs';
 ```
 
 #### removeWords( str, words\[, ignoreCase] )
@@ -85,11 +68,16 @@ var out = removeWords( str, [ 'boop', 'foo' ], true );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var removeWords = require( '@stdlib/string-remove-words' );
-var stopwords = require( '@stdlib/datasets-stopwords-en' );
-var inmap = require( '@stdlib/utils-inmap' );
-var spam = require( '@stdlib/datasets-spam-assassin' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@esm/index.mjs';
+import stopwords from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@esm/index.mjs';
+import inmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inmap@esm/index.mjs';
+import spam from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-spam-assassin@esm/index.mjs';
 
 var corpus = spam();
 var words = stopwords();
@@ -101,74 +89,17 @@ function remove( mail, idx ) {
 }
 
 inmap( corpus, remove );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use as a general utility, install the CLI package globally
-
-```bash
-npm install -g @stdlib/string-remove-words-cli
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: remove-words [options] [<string>] --words=<string>
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-         --words w1,w2,...     Comma-separated list of words.
-         --ignore-case         Perform case-insensitive replace operation.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ remove-words 'beep! boop!!!' --words='beep,boop'
-! !!!
-```
-
-To use as a [standard stream][standard-streams],
-
-```bash
-$ echo -n 'beep! boop!!!' | remove-words --words='BEEP,BOOP' --ignore-case
-! !!!
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -187,7 +118,7 @@ $ echo -n 'beep! boop!!!' | remove-words --words='BEEP,BOOP' --ignore-case
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
