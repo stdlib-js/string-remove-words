@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@deno/mod.js';
+import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@v0.1.0-deno/mod.js';
 ```
 
 #### removeWords( str, words\[, ignoreCase] )
@@ -80,7 +80,7 @@ var out = removeWords( str, [ 'boop', 'foo' ], true );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@deno/mod.js';
+import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@v0.1.0-deno/mod.js';
 import stopwords from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@deno/mod.js';
 import inmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inmap@deno/mod.js';
 import spam from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-spam-assassin@deno/mod.js';
