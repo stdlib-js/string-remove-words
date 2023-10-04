@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@esm/index.mjs';
+import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@v0.1.1-esm/index.mjs';
 ```
 
 #### removeWords( str, words\[, ignoreCase] )
@@ -85,7 +85,7 @@ var out = removeWords( str, [ 'boop', 'foo' ], true );
 <body>
 <script type="module">
 
-import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@esm/index.mjs';
+import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@v0.1.1-esm/index.mjs';
 import stopwords from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@esm/index.mjs';
 import inmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inmap@esm/index.mjs';
 import spam from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-spam-assassin@esm/index.mjs';
