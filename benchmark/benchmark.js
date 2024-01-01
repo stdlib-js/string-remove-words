@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var stopwords = require( '@stdlib/datasets-stopwords-en' );
 var uppercase = require( '@stdlib/string-uppercase' );
 var isString = require( '@stdlib/assert-is-string' ).isPrimitive;
