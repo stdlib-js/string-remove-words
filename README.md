@@ -50,6 +50,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+removeWords = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-remove-words/tags). For example,
+
+```javascript
 removeWords = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@v0.2.0-umd/browser.js' )
 ```
 
@@ -62,7 +67,7 @@ var removeWords = require( 'path/to/vendor/umd/string-remove-words/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -107,7 +112,7 @@ var out = removeWords( str, [ 'boop', 'foo' ], true );
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-inmap@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-spam-assassin@umd/browser.js"></script>
