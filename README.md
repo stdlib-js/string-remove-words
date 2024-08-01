@@ -230,8 +230,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/string-remove-words.svg
 [npm-url]: https://npmjs.org/package/@stdlib/string-remove-words
 
-[test-image]: https://github.com/stdlib-js/string-remove-words/actions/workflows/test.yml/badge.svg?branch=v0.2.2
-[test-url]: https://github.com/stdlib-js/string-remove-words/actions/workflows/test.yml?query=branch:v0.2.2
+[test-image]: https://github.com/stdlib-js/string-remove-words/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/string-remove-words/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/string-remove-words/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/string-remove-words?branch=main
