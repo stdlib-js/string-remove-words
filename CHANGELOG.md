@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-07-01)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`1d9e0f7`](https://github.com/stdlib-js/stdlib/commit/1d9e0f723c6962a3401a73d0a1955e5fd26cddc7) - **test:** fix comma position in expected value _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-27)
