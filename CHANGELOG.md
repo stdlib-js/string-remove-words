@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-01)
+## Unreleased (2026-01-26)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`f9651e6`](https://github.com/stdlib-js/stdlib/commit/f9651e6411b4ebd3c95dcc6b46c02e6d5be009fa) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`1d9e0f7`](https://github.com/stdlib-js/stdlib/commit/1d9e0f723c6962a3401a73d0a1955e5fd26cddc7) - **test:** fix comma position in expected value _(by Philipp Burckhardt)_
 
 </details>
