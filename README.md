@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-remove-words/tags). For example,
+
+```javascript
 import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@v0.2.3-esm/index.mjs';
 ```
 
@@ -85,7 +90,7 @@ var out = removeWords( str, [ 'boop', 'foo' ], true );
 <body>
 <script type="module">
 
-import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@v0.2.3-esm/index.mjs';
+import removeWords from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-remove-words@esm/index.mjs';
 import stopwords from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@esm/index.mjs';
 import inmap from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inmap@esm/index.mjs';
 import spam from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-spam-assassin@esm/index.mjs';
