@@ -1,5 +1,0 @@
-"use strict";var p=function(n,e){return function(){try{return e||n((e={exports:{}}).exports,e),e.exports}catch(u){throw (e=0, u)}};};var h=p(function(E,g){
-var q=require('@stdlib/assert-is-string-array/dist'),m=require('@stdlib/string-uppercase/dist'),b=require('@stdlib/assert-is-boolean/dist').isPrimitive,c=require('@stdlib/assert-is-string/dist').isPrimitive,k=require('@stdlib/nlp-tokenize/dist'),l=require('@stdlib/error-tools-fmtprodmsg/dist');function y(n,e,u){var a,o,v,t,s,f,r,i;if(!c(n))throw new TypeError(l('1PF3F',n));if(!q(e))throw new TypeError(l('1PFAS',e));if(arguments.length>2&&!b(u))throw new TypeError(l('1PFAL',u));if(a=k(n,!0),f=e.length,s=[],u){for(v=e.slice(),r=0;r<f;r++)v[r]=m(v[r]);for(r=0;r<a.length;r++){for(t=!0,o=m(a[r]),i=0;i<f;i++)if(v[i]===o){t=!1;break}t&&s.push(a[r])}return s.join("")}for(r=0;r<a.length;r++){for(o=a[r],t=!0,i=0;i<f;i++)if(e[i]===o){t=!1;break}t&&s.push(o)}return s.join("")}g.exports=y
-});var T=h();module.exports=T;
-/** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
